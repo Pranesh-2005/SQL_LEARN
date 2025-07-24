@@ -16,4 +16,6 @@ VALUES
 (5,'Surya',90,'A','MDU'),
 (6,'HR',90,'A','THU');
 
-SELECT name from student WHERE city='SNKL';
+SELECT * from student
+WHERE city NOT IN ('PPY','SNKL') AND marks >= 80
+LIMIT 3;
