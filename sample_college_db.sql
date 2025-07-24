@@ -19,3 +19,8 @@ VALUES
 SELECT * from student
 WHERE city NOT IN ('PPY','SNKL') AND marks >= 80
 LIMIT 3;
+
+SELECT * from student 
+WHERE marks >= 80
+ORDER BY marks DESC
+LIMIT 1;
