@@ -15,3 +15,5 @@ VALUES
 (4,'Selva',82,'A','TUP'),
 (5,'Surya',90,'A','MDU'),
 (6,'HR',90,'A','THU');
+
+SELECT name from student WHERE city='SNKL';
