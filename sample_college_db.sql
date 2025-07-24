@@ -66,3 +66,10 @@ WHERE grade = 'A'
 GROUP BY city
 HAVING MAX(marks) >= 80
 ORDER BY city ASC;
+
+UPDATE student
+SET grade = 'B'
+WHERE marks >= 50 AND marks < 80;
+
+SELECT * 
+FROM student;
