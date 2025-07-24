@@ -45,3 +45,12 @@ SELECT city, MAX(marks)
 FROM student
 GROUP BY city;
 
+SELECT city, AVG(marks)
+FROM student
+GROUP BY city
+ORDER BY AVG(marks);
+
+SELECT grade,COUNT(id)
+FROM student
+GROUP BY grade
+ORDER BY grade DESC;
