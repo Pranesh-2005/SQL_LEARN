@@ -24,3 +24,15 @@ SELECT * from student
 WHERE marks >= 80
 ORDER BY marks DESC
 LIMIT 1;
+
+SELECT MAX(marks)
+FROM student;
+
+SELECT MIN(marks)
+FROM student;
+
+SELECT COUNT(id)
+FROM student;
+
+SELECT AVG(marks)
+FROM student;
