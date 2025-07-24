@@ -36,3 +36,12 @@ FROM student;
 
 SELECT AVG(marks)
 FROM student;
+
+SELECT city,name,COUNT(city)
+FROM student
+GROUP BY city, name;
+
+SELECT city, MAX(marks)
+FROM student
+GROUP BY city;
+
