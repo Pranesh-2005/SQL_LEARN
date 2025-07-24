@@ -54,3 +54,15 @@ SELECT grade,COUNT(id)
 FROM student
 GROUP BY grade
 ORDER BY grade DESC;
+
+SELECT city, COUNT(id)
+FROM student
+GROUP BY city
+HAVING MAX(marks) > 90;
+
+SELECT city, COUNT(name)
+FROM student
+WHERE grade = 'A'
+GROUP BY city
+HAVING MAX(marks) >= 80
+ORDER BY city ASC;
