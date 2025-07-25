@@ -138,3 +138,12 @@ RENAME TO students;
 
 SELECT * 
 FROM students
+
+ALTER TABLE students
+RENAME COLUMN name TO full_name;
+
+DELETE FROM students
+WHERE marks < 80;
+
+ALTER TABLE students
+DROP COLUMN grade;
