@@ -88,3 +88,14 @@ name VARCHAR(30),
 dpt_id INT,
 FOREIGN KEY(dpt_id) REFERENCES dpt(id)
 );
+
+INSERT INTO dpt
+VALUES (1,'AD'),
+(2,'AL'),
+(3,'CSE'),
+(4,'ECE')
+
+SELECT *
+FROM dpt;
+
+DROP TABLE teacher;
