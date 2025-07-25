@@ -120,3 +120,21 @@ SELECT * FROM teacher
 UPDATE dpt
 SET id = 258
 WHERE id = 4;
+
+ALTER TABLE student
+ADD COLUMN age INT NOT NULL DEFAULT 18;
+
+ALTER TABLE student
+ALTER COLUMN age TYPE VARCHAR(3);
+
+ALTER TABLE student
+RENAME age to stu_age;
+
+ALTER TABLE student
+DROP COLUMN stu_age;
+
+ALTER TABLE student
+RENAME TO students;
+
+SELECT * 
+FROM students
