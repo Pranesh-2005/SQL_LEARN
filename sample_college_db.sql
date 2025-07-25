@@ -117,3 +117,6 @@ VALUES (1,'JS',1),
 
 SELECT * FROM teacher
 
+UPDATE dpt
+SET id = 258
+WHERE id = 4;
