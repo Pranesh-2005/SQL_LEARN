@@ -76,3 +76,15 @@ FROM student;
 
 DELETE FROM student
 WHERE marks = 80;
+
+CREATE TABLE dpt(
+id INT PRIMARY KEY,
+name VARCHAR(30)
+);
+
+CREATE TABLE teacher(
+id INT PRIMARY KEY,
+name VARCHAR(30),
+dpt_id INT,
+FOREIGN KEY(dpt_id) REFERENCES dpt(id)
+);
