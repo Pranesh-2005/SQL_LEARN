@@ -73,3 +73,6 @@ WHERE marks >= 50 AND marks < 80;
 
 SELECT * 
 FROM student;
+
+DELETE FROM student
+WHERE marks = 80;
