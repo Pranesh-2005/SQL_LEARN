@@ -108,3 +108,12 @@ FOREIGN KEY(dpt_id) REFERENCES dpt(id)
 ON UPDATE CASCADE
 ON DELETE CASCADE
 );
+
+INSERT INTO teacher 
+VALUES (1,'JS',1),
+(2,'Pranesh',2),
+(3,'CG',3),
+(4,'Bharath',4)
+
+SELECT * FROM teacher
+
