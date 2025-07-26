@@ -151,4 +151,9 @@ DROP COLUMN grade;
 SELECT *
 FROM teacher t
 INNER JOIN dpt d
-ON t.id = d.id
+ON t.id = d.id;
+
+SELECT *
+FROM teacher t
+LEFT JOIN dpt d
+ON t.id = d.id;
