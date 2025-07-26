@@ -162,3 +162,8 @@ SELECT *
 FROM teacher t
 RIGHT JOIN dpt
 ON t.id = dpt.id;
+
+SELECT *
+FROM teacher t
+FULL JOIN dpt d
+ON t.id = d.id;
