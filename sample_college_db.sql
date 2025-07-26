@@ -179,3 +179,26 @@ FROM teacher t
 RIGHT JOIN dpt d
 ON t.id = d.id
 WHERE t.id IS NULL;
+
+CREATE TABLE emp(
+id INT PRIMARY KEY,
+name VARCHAR(50),
+mngr_id INT 
+);
+
+INSERT INTO emp(id,name,mngr_id)
+VALUES 
+(1,'JS',2),
+(2,'Pranesh',null),
+(3,'Selva',4),
+(4,'Suresh',2)
+
+SELECT * 
+FROM emp as a
+JOIN emp as b
+ON a.id = b.mngr_id;
+
+SELECT a.name as manager_name, b.name
+FROM emp as a
+JOIN emp as b
+ON a.id = b.mngr_id;
