@@ -167,3 +167,9 @@ SELECT *
 FROM teacher t
 FULL JOIN dpt d
 ON t.id = d.id;
+
+SELECT *
+FROM teacher t
+LEFT JOIN dpt d
+ON t.id = d.id
+WHERE d.id IS NULL;
