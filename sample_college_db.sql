@@ -157,3 +157,8 @@ SELECT *
 FROM teacher t
 LEFT JOIN dpt d
 ON t.id = d.id;
+
+SELECT *
+FROM teacher t
+RIGHT JOIN dpt
+ON t.id = dpt.id;
