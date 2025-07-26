@@ -147,3 +147,8 @@ WHERE marks < 80;
 
 ALTER TABLE students
 DROP COLUMN grade;
+
+SELECT *
+FROM teacher t
+INNER JOIN dpt d
+ON t.id = d.id
