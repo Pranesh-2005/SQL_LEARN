@@ -173,3 +173,9 @@ FROM teacher t
 LEFT JOIN dpt d
 ON t.id = d.id
 WHERE d.id IS NULL;
+
+SELECT *
+FROM teacher t
+RIGHT JOIN dpt d
+ON t.id = d.id
+WHERE t.id IS NULL;
